@@ -1,0 +1,6 @@
+a=input()
+b=input()
+c=a+b
+d= sorted(c)
+d= ''.join(d)
+print(d)
