@@ -1,0 +1,8 @@
+a=input()
+for i in a:
+    if a.count('z')==a.count('o')*0.5:
+        print("Yes")
+        break
+    else:
+        print("No")
+        break
