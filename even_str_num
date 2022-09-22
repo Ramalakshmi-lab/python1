@@ -1,0 +1,25 @@
+a=input()
+l=[]
+m=[]
+for i in a:
+    if i.isdigit()==True :
+        if int(i)%2==0:
+            l.append(i)
+            l.sort()
+        else:
+            m.append(i)
+if(l==[]):
+    print(-1)
+else:
+    c=min(l)
+    p=l+m
+    p=list(set(p))
+    p.sort()
+    p.reverse()
+    p.remove(l[0])
+    p.append(l[0])
+    p="".join(p)
+    print(p)
+    
+
+        
