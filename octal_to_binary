@@ -1,0 +1,11 @@
+a=int(input())
+i=0
+c=0
+while(a!=0):
+    r=a%10
+    c+=(8**i)*r
+    a=a//10
+    i+=1
+c=bin(c)
+print(c.replace("0b",""))
+    
