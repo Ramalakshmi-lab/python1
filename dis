@@ -1,0 +1,17 @@
+import math
+def dis(a,p):
+    s=0
+    while(a!=0):
+        r=a%10
+        s+=r**p
+        p-=1
+        a=a//10
+    if(s==d):
+        print("True")
+    else:
+        print("False")
+
+a=int(input())
+d=a
+p=int(math.log10(a))+1
+dis(a,p)
