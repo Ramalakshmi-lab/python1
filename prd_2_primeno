@@ -1,0 +1,18 @@
+def prime(n):
+    c=1
+    for i in range(2,n//2+1):
+        if(n%i==0):
+            c=0
+    if(c==0):
+        return False
+    else:
+        return True
+a=int(input())
+l=[]
+for i in range(2,a):
+    if a%i==0 and prime(i)==True and prime(a//i)==True:
+        l.append(i)
+        l.append(a//i)
+        break
+print(*l)
+    
