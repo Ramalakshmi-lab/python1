@@ -1,0 +1,13 @@
+a=int(input())
+l=[]
+b=0
+c=1
+l.append(b)
+l.append(c)
+for i in range(2,a):
+    d=c+b
+    b=c
+    c=d
+    l.append(d)
+print(*l)
+    
