@@ -1,0 +1,12 @@
+a=int(input())
+l=[]
+c=0
+while(a>0):
+    r=a%10
+    l.append(r)
+    a=a//10
+p=list(set(l))
+if(len(l))==(len(p)):
+    print("Unique Number")
+else:
+    print("Not Unique Number")
