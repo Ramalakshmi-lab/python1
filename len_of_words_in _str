@@ -1,0 +1,7 @@
+a=input()
+l=a.split()
+print(*l)
+c=[]
+for i in l:
+    c.append(len(i))
+print(*c)
