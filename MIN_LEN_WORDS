@@ -1,0 +1,7 @@
+a=input()
+l=a.split()
+c=len(l[0])
+for i in range(1,len(l)):
+    if len(l[i])<c:
+        c=len(l[i])
+print(c)
