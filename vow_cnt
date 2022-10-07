@@ -1,0 +1,10 @@
+a=input()
+c=['a','e','i','o','u','A','E','I','O','U']
+d=[]
+for i in a:
+    if i in c:
+            d.append(i)
+if(len(d)>0):
+    print(len(d))
+else:
+    print("0")
