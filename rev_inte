@@ -1,0 +1,21 @@
+
+a=int(input())
+c=0
+if(a<0):
+    a=-(a)
+    c=c+1
+l=[]
+while(a):
+    r=a%10
+    r=str(r)
+    if(r.isdigit()==True):
+        if(len(l)==0 and r=='0'):
+            pass
+        elif(r!='0' or r=='0'):
+            l.append(r)
+    a=a//10
+if(c==1):
+    k=int("".join(l))
+    print(-k)
+else:
+    print("".join(l))
