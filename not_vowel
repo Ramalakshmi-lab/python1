@@ -1,0 +1,14 @@
+a=input()
+c=['a','e','i','o','u']
+l=[]
+e=[]
+d=5
+for i in c:
+    if i in a:
+        l.append(i)
+    else:
+        e.append(i)
+if(len(l)==5):
+    print("0")
+else:
+    print(*e)
