@@ -1,0 +1,8 @@
+a=int(input())
+l=list(map(int,str(a)))
+for i in range(len(l)):
+    if l[i]==6:
+        l[i]=9
+        break
+for i in l:
+    print(i,end="")
