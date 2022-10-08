@@ -1,0 +1,20 @@
+a=input()
+b=input()
+l=a.split()
+m=b.split()
+c=[]
+if len(l)>len(m):
+    for i in l:
+        if i in m:
+            if l.count(i)==1 and m.count(i)==1:
+                c.append(i)
+else:
+    for i in m:
+        if i in l:
+            if l.count(i)==1 and m.count(i)==1:
+                c.append(i)
+d=[]
+for i in c:
+    if c.count(i)==1:
+        d.append(i)
+print(len(d))
