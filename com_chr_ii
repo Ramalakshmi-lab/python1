@@ -1,0 +1,15 @@
+a=input()
+b=input()
+a=a.lower()
+b=b.lower()
+l=list(a)
+m=list(b)
+c=[]
+for i in l:
+    if i in m and i!=" ":
+        if i not in c:
+            c.append(i)
+if(len(c)>0):
+    print(len(c))
+else:
+    print("0")
