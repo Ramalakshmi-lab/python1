@@ -1,0 +1,10 @@
+a=input()
+a=a.lower()
+a=list(a)
+l=[]
+for i in a:
+    if a.count(i)==1:
+        if i.isalpha()==True:
+            l.append(i)
+l.sort()
+print("".join(l))
