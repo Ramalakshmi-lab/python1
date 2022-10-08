@@ -1,0 +1,8 @@
+a=input()
+a=a.lower()
+c=[]
+for i in a:
+    if i not in c and i!=" ":
+        c.append(i)
+c.sort()
+print("".join(c))
