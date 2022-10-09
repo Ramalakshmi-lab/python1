@@ -1,0 +1,16 @@
+def rev(n):
+    c=0
+    while(n>0):
+        r=n%10
+        c=c*10+r
+        n=n//10
+    return c
+a=int(input())
+b=a*a
+d=rev(a)
+e=d*d
+f=rev(e)
+if(b==f):
+    print("True")
+else:
+    print("False")
