@@ -1,0 +1,16 @@
+def fact(n):
+    if n==1 or n==0:
+        return 1
+    else:
+        return n*fact(n-1)
+a=int(input())
+h=a
+c=[]
+while(a>0):
+    r=a%10
+    c.append(fact(r))
+    a=a//10
+if(sum(c)==h):
+    print("The number %d is a strong number"%h)
+else:
+    print("The number %d is not a strong number"%h)
