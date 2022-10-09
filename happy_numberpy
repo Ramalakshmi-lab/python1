@@ -1,0 +1,15 @@
+def rev(n):
+    c=0
+    while(n>0):
+        r=n%10
+        c+=r*r
+        n=n//10
+    if(c<9):
+        if(c==1 or c==7):
+            return True
+        else:
+            return False
+    else:
+        return rev(c)
+a=int(input())
+print(rev(a))
