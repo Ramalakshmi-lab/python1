@@ -1,0 +1,6 @@
+a=input()
+c=a.split()
+d=[]
+for i in c:
+    d.append(i[::-1])
+print(*d)
