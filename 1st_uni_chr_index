@@ -1,0 +1,11 @@
+a=input()
+a=a.lower()
+l=[]
+for i in range(len(a)):
+    if a.count(a[i]))==1:
+       l.append(i)
+       break
+if(len(l)==1):
+    print(*l)
+else:
+    print("-1")
