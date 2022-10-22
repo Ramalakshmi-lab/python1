@@ -1,0 +1,14 @@
+a=int(input())
+s=a
+b=a*a
+b=str(b)
+d=0
+while(s!=0):
+    r=s%10
+    d+=1
+    s=s//10
+m=b[-d:]
+if(int(m)==a):
+    print("Automorphic Number")
+else:
+    print("Not an Automorphic Number")
