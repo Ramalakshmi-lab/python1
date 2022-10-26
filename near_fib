@@ -1,0 +1,22 @@
+def fib(n):
+    if n==0:
+        return 0
+    a=0
+    b=1
+    c=a+b
+    d=[]
+    while(c<=n):
+        a=b
+        b=c
+        c=a+b
+    if(abs(c-n)>abs(b-n)):
+        return [b]
+    elif(abs(c-n)==abs(b-n)):
+        d.append(b)
+        d.append(c)
+        return d
+    else:
+        return [c]
+a=int(input())
+p=fib(a)
+print(*p)
