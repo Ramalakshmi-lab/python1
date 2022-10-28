@@ -1,0 +1,13 @@
+def pal(n):
+    p=n[::-1]
+    return p
+a=int(input())
+for i in range(a):
+    b=input()
+    m=pal(b)
+    if(b==m) and len(m)%2==0:
+        print("YES EVEN")
+    elif (b==m) and len(m)%2!=0:
+        print("YES ODD")
+    else:
+        print("NO")
