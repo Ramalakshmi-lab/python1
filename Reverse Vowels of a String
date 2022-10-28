@@ -1,0 +1,20 @@
+a=input()
+c=list(a)
+b=['a','e','i','o','u','A','E','I','O','U']
+m=0
+n=len(c)-1
+
+while(m<n):
+    if c[m] in b and c[n] in b:
+        c[m],c[n]=c[n],c[m]
+        m+=1
+        n-=1
+    elif c[m] in b and c[n] not in b:
+        n-=1
+    elif c[m] not in b and c[n] in b:
+        m+=1
+    else:
+        m+=1
+        n-=1
+
+print("".join(c))
