@@ -1,0 +1,19 @@
+def vow(n):
+    c=0
+    n=n.lower()
+    v=['a','e','i','o','u']
+    for i in n:
+        if i in v:
+            c+=1
+    return c
+p=[]
+l=[]
+a=input()
+l=a.split(" ")
+for i in l:
+    p.append(vow(i))
+m=[]
+for i in p:
+    m.append(p.count(i))
+print(max(m))
+    
