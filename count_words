@@ -1,0 +1,11 @@
+def cnt(n):
+    v=['a','e','i','o','u','A','E','I','O','U']
+    if n[0] in v and n[-1] not in v:
+        return True
+c=0
+a=input()
+d=a.split(" ")
+for i in d:
+    if cnt(i)==True:
+        c+=1
+print(c)
